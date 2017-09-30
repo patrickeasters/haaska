@@ -39,6 +39,7 @@ Note that Home Assistant includes a component (`emulated_hue`) to communicate wi
     * Note the "Client ID" and "Client Secret", as you'll need those later
 1. Create an Alexa skill and Lambda Function by following [these instructions](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/steps-to-create-a-smart-home-skill) (with the modifications noted below).
     * The name of the Alexa skill doesn't matter, but I'd suggest "haaska"
+    * The "Payload Version" of the Alexa skill needs to be changed to `v2 (legacy)`
     * The name of the Lambda function does matter; use "haaska", otherwise you'll need to modify the `FUNCTION_NAME` variable in the `Makefile`.
     * For "Runtime", select "Python 3.6" as in the example
     * Select "Upload a .ZIP file" for "Code entry type", and upload `haaska.zip` that you created in step 1.
